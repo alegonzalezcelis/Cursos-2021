@@ -1,0 +1,65 @@
+.footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: $black;
+    color: $white;
+    padding: 2rem 0;
+    font-family: $poppins;
+
+    &__copyright p{
+        margin: 0;
+
+        @include mobile-breakpoint {
+            text-align: center;
+        }
+    }
+
+    &__links{
+        display: flex;
+        justify-content: space-between;
+
+        @include mobile-breakpoint {
+            flex-direction: column;
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+    }
+
+    &__link{
+        text-decoration: none;
+        color: $white;
+        padding: 0 1rem;
+
+        @include mobile-breakpoint {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &__form{
+        display: flex;
+
+        @include mobile-breakpoint {
+            flex-direction: column;
+        }
+    }
+
+    &__form-input{
+        width: 180px;
+        margin-right: 1rem;
+
+        @include mobile-breakpoint {
+            margin: 1rem 0;
+            width: 100%;
+        }
+    }
+
+    &__form-button{
+        background-color: $tangerine;
+        padding: 0.1rem 0.5rem;
+        border-radius: 10%;
+    }
+}

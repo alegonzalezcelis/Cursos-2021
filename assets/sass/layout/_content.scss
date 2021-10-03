@@ -1,0 +1,129 @@
+.content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 1rem;
+
+    &__courses{
+        display: flex;
+        flex-direction: column;
+        width: 49%;
+        border: 1px solid $charcoal;
+        padding: 1rem;
+
+        @include mobile-breakpoint {
+            width: 100%;
+        }
+
+        &--top-margin{
+            @include mobile-breakpoint {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+
+    &__card{
+        width: 100%;
+        border: 1px solid #ccc;
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+        font-family: $ubuntu;
+
+        &--text-center{
+            text-align: center;
+            border: none;
+        }
+    }
+
+    &__img{
+        width: 100%;
+
+        &--developer{
+            border-radius: 50%;
+            border: 2px solid $gray;
+            width:200px;
+        }
+    }
+
+    &__title{
+        margin: 1rem 0;
+        font-size: $x-large;
+        font-weight: $bold-font;
+    }
+
+    &__description{
+        font-size: $medium;
+        text-align: justify;
+    }
+
+    &__instructor{
+        font-weight: bold;
+        font-size: $large;
+    }
+
+    &__icon{
+        display: flex;
+        padding: 0;
+        list-style: none;
+
+        &--center{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            font-size: $large;
+        }
+    }
+
+    &__item{
+        margin: 1rem;
+
+        &--left{
+            margin-left: 0;
+        }
+
+        &--center{
+            margin: 0;
+            padding: 0 0.4rem;
+        }
+
+        i{
+            margin-right: 0.5rem;
+        }
+    }
+
+    &__button{
+        width: 100%;
+        background-color: $gray;
+
+        a{
+           text-decoration: none; 
+           color: $white;
+           font-size: $large;
+           font-weight: bold;
+        }
+    }
+
+    &__list{
+        list-style: circle;
+        text-align: left;
+        padding: 1rem 1.5rem;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: $charcoal;
+
+        &:hover{
+            color: $orange;
+        }
+    }
+
+    &__animation{
+        margin: auto;
+        width: 100%;
+        max-width: 320px;
+    }
+
+
+    
+}
